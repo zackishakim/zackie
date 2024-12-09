@@ -1,0 +1,121 @@
+<!-- activity_budget.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F0F0F0"
+    android:gravity="center">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget"
+        android:textSize="40sp"
+        android:textColor="#663300"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:shadowColor="#999999"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+    <!-- Total Income -->
+    <TextView
+        android:id="@+id/tvTotalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Income: $0.00"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start|center_vertical"/>
+
+    <!-- Total Expenses -->
+    <TextView
+        android:id="@+id/tvTotalExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expenses: $0.00"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start|center_vertical"/>
+
+    <!-- Remaining Budget -->
+    <TextView
+        android:id="@+id/tvRemainingBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget: $0.00"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start|center_vertical"/>
+
+    <!-- Budget Input -->
+    <EditText
+        android:id="@+id/etBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your budget"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:backgroundTint="#663300"
+        android:textColor="#663300"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Set Budget Button -->
+    <Button
+        android:id="@+id/btnSetBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Budget"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#663300"
+        android:layout_marginBottom="12dp"
+        android:padding="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- View Budget Details Button -->
+    <Button
+        android:id="@+id/btnViewBudgetDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Budget Details"
+        android:textSize="18sp"
+        android:textColor="#663300"
+        android:backgroundTint="#F5E1C0"
+        android:layout_marginBottom="16dp"
+        android:padding="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</LinearLayout>
